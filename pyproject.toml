@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enrichgrid"
+version = "0.1.0"
+description = "Official Python client and CLI for the EnrichGrid LinkedIn profile & company scraper API"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["requests>=2.28"]
+authors = [{ name = "EnrichGrid", email = "support@enrichgrid.com" }]
+keywords = ["linkedin", "scraper", "linkedin-scraper", "enrichment", "lead-generation", "api", "sdk", "proxycurl"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Developers",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://enrichgrid.com"
+Documentation = "https://enrichgrid.com/api-docs"
+Source = "https://github.com/enrichgrid/enrichgrid-python"
+
+[project.scripts]
+enrichgrid = "enrichgrid.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

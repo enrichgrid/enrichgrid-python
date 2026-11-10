@@ -59,6 +59,8 @@ enrichgrid me
 
 - `live=True` skips the 30-day copy and collects the profile again. It costs the same credit.
 - Requests per second depend on your plan: 2 on free, 5–50 on paid plans. Keep `workers` near that number.
-- Coming from Proxycurl? See the [migration guide](https://enrichgrid.com/guides/proxycurl-migration).
+- Coming from Proxycurl? See the [migration guide](https://enrichgrid.com/guides/proxycurl-migration) and the
+  [Proxycurl adapter](https://github.com/enrichgrid/proxycurl-adapter).
+- No code: the [Chrome extension](https://chromewebstore.google.com/detail/camfalbgbfimllhmdncpjmnaabidceci) works on LinkedIn pages, and the [n8n node](https://enrichgrid.com/integrations/n8n) in workflows.
 
 Full API reference: https://enrichgrid.com/api-docs. MIT license. EnrichGrid is independent and not affiliated with LinkedIn.
